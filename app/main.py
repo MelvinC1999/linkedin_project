@@ -10,6 +10,13 @@ from app.post_organization import router as post_organization_router
 from app.image_post_organization import router as image_post_organization_router
 from app.video_post_organization import router as video_post_organization_router
 from app.document_post_organization import router as document_post_organization_router
+from app.ugc_post_text_user import router as ugc_post_text_user_router
+from app.ugc_post_text_organization import router as ugc_post_text_organization_router
+from app.ugc_post_image_user import router as ugc_post_image_user_router
+from app.ugc_post_image_organization import router as ugc_post_image_organization_router
+from app.ugc_post_video_user import router as ugc_post_video_user_router
+from app.ugc_post_video_organization import router as ugc_post_video_organization_router
+from app.ugc_post_document_organization import router as ugc_post_document_organization_router
 
 app = FastAPI()
 
@@ -24,6 +31,13 @@ app.include_router(post_organization_router)
 app.include_router(image_post_organization_router)
 app.include_router(video_post_organization_router)
 app.include_router(document_post_organization_router)
+app.include_router(ugc_post_text_user_router)
+app.include_router(ugc_post_text_organization_router)
+app.include_router(ugc_post_image_user_router)
+app.include_router(ugc_post_image_organization_router)
+app.include_router(ugc_post_video_user_router)
+app.include_router(ugc_post_video_organization_router)
+app.include_router(ugc_post_document_organization_router)
 
 # Iniciar el servidor
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ VIDEO_FOLDER.mkdir(exist_ok=True)
 @router.post("/linkedin/organization/initialize-video-upload")
 def initialize_video_upload(
     file_size_bytes: int = Body(..., embed=True),
-    organization_urn: str = Body(..., embed=True, example="urn:li:organization:123456")
+    organization_urn: str = Body(..., embed=True, examples="urn:li:organization:123456")
 ):
     """
     Inicializa la subida de video para una organización
