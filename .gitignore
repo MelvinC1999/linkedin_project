@@ -1,2 +1,22 @@
-# Ignorar archivos sensibles
+# Entornos virtuales de Python
+env/
+venv/
+.venv/
+ENV/
+
+# Archivos y carpetas del editor
+.vscode/
+.idea/
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Variables de entorno y archivos sensibles
 .env
+token.txt
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
